@@ -1,0 +1,12 @@
+import sys
+n = int(input().strip())
+for _ in range(n):
+    s = input().strip()
+    pset = set()  
+    res = 0       
+ 
+    for char in s:
+        if char not in pset:
+            res += 1
+            pset.add(char)
+    print(res)
